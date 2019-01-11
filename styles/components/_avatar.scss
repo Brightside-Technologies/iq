@@ -1,0 +1,10 @@
+.avatar {
+    border-width: 7px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .avatar-figure {
+        height: 256px !important;
+        width: 256px !important;
+    }
+}
