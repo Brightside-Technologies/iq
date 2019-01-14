@@ -56,9 +56,9 @@ export default class Nav extends React.Component {
                     className={`navbar-menu ${isNavbarOpen ? "is-active" : ""}`}>
                     <div className="navbar-start" />
                     <div className="navbar-end">
-                        <Link href="/">
+                        {/* <Link href="/">
                             <a className="navbar-item">Home</a>
-                        </Link>
+                        </Link> */}
                         <Link href="/work">
                             <a className="navbar-item">Work</a>
                         </Link>
