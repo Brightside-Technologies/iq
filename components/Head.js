@@ -25,11 +25,11 @@ const Head = props => (
         <meta property="og:image" content={props.ogImage || defaultOGImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-            crossOrigin="anonymous"
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+            integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+            crossorigin="anonymous"
         />
     </NextHead>
 );

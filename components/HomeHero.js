@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 export default function HomeHero() {
     return (
-        <section className="hero is-bold is-fullheight">
+        <section className="hero home-hero is-bold is-fullheight">
             <div className="hero-head">
                 <Nav />
             </div>

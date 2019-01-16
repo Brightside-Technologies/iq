@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Event 1",
+        "start": "2015-03-17T15:00",
+        "end": "2015-03-17T13:18:00",
+        "description": "Lorep Ipsum...",
+        "url": "https://www.google.com",
+        "location": "California State University San Bernardino",
+        "address": "5500 University Pkwy. San Bernardino, CA",
+        "geo": {
+            "latitude": "39.287266",
+            "longitude": "-76.603813",
+            "street": "5500 University Pkwy",
+            "city": "San Bernardino",
+            "state": "CA",
+            "country": "US",
+            "zip": "92201"
+        },
+        "photo_url": ""
+    }
+]

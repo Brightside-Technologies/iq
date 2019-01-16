@@ -1,6 +1,7 @@
 import Link from "next/link";
+import {withRouter} from "next/router";
 
-export default class Nav extends React.Component {
+class Nav extends React.Component {
     state = {
         isNavbarOpen: false
     };
@@ -12,6 +13,7 @@ export default class Nav extends React.Component {
 
     render() {
         const {isNavbarOpen} = this.state;
+        const {router} = this.props;
         return (
             <nav
                 className="navbar has-background-white"
@@ -56,14 +58,21 @@ export default class Nav extends React.Component {
                     className={`navbar-menu ${isNavbarOpen ? "is-active" : ""}`}>
                     <div className="navbar-start" />
                     <div className="navbar-end">
-                        {/* <Link href="/">
-                            <a className="navbar-item">Home</a>
-                        </Link> */}
                         <Link href="/work">
-                            <a className="navbar-item">Work</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === "/work" ? "is-active" : null
+                                }`}>
+                                Work
+                            </a>
                         </Link>
                         <Link href="/events">
-                            <a className="navbar-item">Events</a>
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === "/events" ? "is-active" : null
+                                }`}>
+                                Events
+                            </a>
                         </Link>
                     </div>
                 </div>
@@ -71,3 +80,5 @@ export default class Nav extends React.Component {
         );
     }
 }
+
+export default withRouter(Nav);
