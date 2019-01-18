@@ -1,21 +1,40 @@
 [
     {
-        "title": "Event 1",
-        "start": "2015-03-17T15:00",
-        "end": "2015-03-17T13:18:00",
+        "title": "Southwest Arts Festival Indio",
+        "start": "2019-03-24T10:00",
+        "end": "2019-01-27T17:00",
         "description": "Lorep Ipsum...",
         "url": "https://www.google.com",
-        "location": "California State University San Bernardino",
-        "address": "5500 University Pkwy. San Bernardino, CA",
+        "location": "Empire Polo Club",
+        "address": "81800 51st Avenue Indio, CA 92201",
         "geo": {
             "latitude": "39.287266",
             "longitude": "-76.603813",
-            "street": "5500 University Pkwy",
-            "city": "San Bernardino",
+            "street": "81800 51st Avenue",
+            "city": "Indio",
             "state": "CA",
             "country": "US",
             "zip": "92201"
         },
-        "photo_url": ""
+        "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54156458%2F122311870473%2F1%2Foriginal.20181219-172311?w=800&auto=compress&rect=0%2C27%2C930%2C465&s=85db33c531f127dbb96807176aab8553"
+    },
+    {
+        "title": "The Desert Redux BNP Opening Party II",
+        "start": "2019-03-02T17:30",
+        "end": "2019-03-02T20:00",
+        "description": "Lorep Ipsum...",
+        "url": "https://www.google.com",
+        "location": "Big Rock Pub",
+        "address": "79940 Westward Ho Drive Indio, CA 92201",
+        "geo": {
+            "latitude": "39.287266",
+            "longitude": "-76.603813",
+            "street": "79940 Westward Ho Drive",
+            "city": "Indio",
+            "state": "CA",
+            "country": "US",
+            "zip": "92201"
+        },
+        "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54432760%2F197546969271%2F1%2Foriginal.20181230-144538?w=800&auto=compress&rect=0%2C0%2C1590%2C795&s=94fff1580cc6c83a91176b7db98b49e6"
     }
 ]
