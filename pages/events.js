@@ -21,19 +21,21 @@ export default function EventsPage() {
             </section>
             <section className="section">
                 <div className="container">
-                    {eventsData.map((event, i) => (
-                        <EventMedia
-                            key={i}
-                            title={event.title}
-                            image={event.photo_url}
-                            description={event.description}
-                            location={event.location}
-                            address={event.address}
-                            start={event.start}
-                            end={event.end}
-                            link={event.url}
-                        />
-                    ))}
+                    {eventsData
+                        .sort((a, b) => new Date(a.start) - new Date(b.start))
+                        .map((event, i) => (
+                            <EventMedia
+                                key={i}
+                                title={event.title}
+                                image={event.photo_url}
+                                description={event.description}
+                                location={event.location}
+                                address={event.address}
+                                start={event.start}
+                                end={event.end}
+                                link={event.url}
+                            />
+                        ))}
                 </div>
             </section>
         </MainLayout>
