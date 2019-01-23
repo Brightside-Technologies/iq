@@ -16,7 +16,7 @@ class Nav extends React.Component {
         const {router} = this.props;
         return (
             <nav
-                className="navbar has-background-white"
+                className="navbar has-background-white is-fixed-top"
                 role="navigation"
                 aria-label="main navigation">
                 <div className="navbar-brand">
@@ -27,17 +27,17 @@ class Nav extends React.Component {
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-facebook-f" />
+                            <i className="fab fa-facebook-f animated bounceIn" />
                         </a>
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-twitter" />
+                            <i className="fab fa-twitter animated bounceIn delay-half-s" />
                         </a>
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-instagram" />
+                            <i className="fab fa-instagram animated bounceIn delay-1s" />
                         </a>
                     </Link>
                     <a

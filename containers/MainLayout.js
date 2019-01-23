@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import css from "../styles/site.scss";
 
 export default ({children, title = "This is the default title"}) => (
-    <div className="root">
+    <div className="root has-navbar-fixed-top">
         <Head>
             <title>{title}</title>
         </Head>

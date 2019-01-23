@@ -1,14 +1,9 @@
 import Avatar from "../images/iq.jpg";
 import "../styles/site.scss";
-import Nav from "./Nav";
-//style={{backgroundImage: `url(${HeroImg})`}}
 
 export default function HomeHero() {
     return (
-        <section className="hero home-hero is-bold is-fullheight">
-            <div className="hero-head">
-                <Nav />
-            </div>
+        <section className="hero home-hero is-bold is-fullheight is-fullheight-with-navbar">
             <div className="hero-body">
                 <div className="container has-text-centered d-flex flex-column align-items-center">
                     <figure className="avatar-figure image is-384x384 animated fadeInDown">

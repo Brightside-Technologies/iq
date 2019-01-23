@@ -1,0 +1,12 @@
+.root {
+    &.has-navbar-fixed-top {
+        padding-top: $navbar-height;
+    }
+    &.has-navbar-fixed-bottom {
+        padding-bottom: $navbar-height;
+    }
+}
+
+.animated.delay-half-s {
+    animation-delay: 0.5s;
+}
