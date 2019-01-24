@@ -2,12 +2,25 @@
     &::after {
         content: "";
         background: url(https://st.depositphotos.com/1007692/2970/v/950/depositphotos_29707561-stock-illustration-rose-background-2.jpg);
-        opacity: 0.33;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;
         z-index: -1;
+
+        animation-name: fadeInHeroImage;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes fadeInHeroImage {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.33;
+        }
     }
 }

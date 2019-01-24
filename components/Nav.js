@@ -61,7 +61,7 @@ class Nav extends React.Component {
                         <Link href="/work">
                             <a
                                 className={`navbar-item ${
-                                    router.pathname === "/work" ? "is-active" : null
+                                    router.pathname === "/work" ? "is-active" : ""
                                 }`}>
                                 Work
                             </a>
@@ -69,7 +69,7 @@ class Nav extends React.Component {
                         <Link href="/events">
                             <a
                                 className={`navbar-item ${
-                                    router.pathname === "/events" ? "is-active" : null
+                                    router.pathname === "/events" ? "is-active" : ""
                                 }`}>
                                 Events
                             </a>

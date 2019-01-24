@@ -10,13 +10,51 @@
             }
         }
     }
-    .navbar-item {
-        &.is-active {
-            color: $pink;
 
-            @media screen and (min-width: $desktop) {
-                border-bottom: $pink 2px solid;
+    .navbar-end {
+        .navbar-item {
+            &.is-active {
+                color: $pink;
             }
+
+            @media (min-width: $desktop) {
+                &:not(.is-active) {
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        background: $pink;
+                        transition: width 0.3s;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            // &.is-active {
+            //     color: $pink;
+
+            //     @media screen and (min-width: $desktop) {
+            //         border-bottom: $pink 2px solid;
+            //         &::after {
+            //             background: #fff;
+            //         }
+            //         &:hover {
+            //             &::after {
+            //                 @media screen and (min-width: $desktop) {
+            //                     width: 100%;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 }
