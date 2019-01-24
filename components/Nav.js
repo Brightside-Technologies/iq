@@ -58,6 +58,14 @@ class Nav extends React.Component {
                     className={`navbar-menu ${isNavbarOpen ? "is-active" : ""}`}>
                     <div className="navbar-start" />
                     <div className="navbar-end">
+                        <Link href="/bio">
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === "/bio" ? "is-active" : ""
+                                }`}>
+                                Bio
+                            </a>
+                        </Link>
                         <Link href="/work">
                             <a
                                 className={`navbar-item ${

@@ -8,7 +8,8 @@
         "pages": 209,
         "title": "Things Fall Apart",
         "year": 1958,
-        "isNew": true
+        "isNew": true,
+        "description": "A Beetle once begged the Eagle to spare a Hare which had run to her for protection. But the Eagle pounced upon her prey, the sweep of her great wings tumbling the Beetle a dozen feet away. Furious at the disrespect shown her, the Beetle flew to the Eagle's nest and rolled out the eggs. Not one did she spare"
     },
     {
         "author": "Hans Christian Andersen",
@@ -18,7 +19,8 @@
         "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
         "pages": 784,
         "title": "Fairy tales",
-        "year": 1836
+        "year": 1836,
+        "description": "A Beetle once begged the Eagle to spare a Hare which had run to her for protection. But the Eagle pounced upon her prey, the sweep of her great wings tumbling the Beetle a dozen feet away. Furious at the disrespect shown her, the Beetle flew to the Eagle's nest and rolled out the eggs. Not one did she spare"
     },
     {
         "author": "Dante Alighieri",
@@ -28,7 +30,8 @@
         "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
         "pages": 928,
         "title": "The Divine Comedy",
-        "year": 1315
+        "year": 1315,
+        "description": "A Beetle once begged the Eagle to spare a Hare which had run to her for protection."
     },
     {
         "author": "Unknown",
@@ -59,45 +62,5 @@
         "pages": 288,
         "title": "One Thousand and One Nights",
         "year": 1200
-    },
-    {
-        "author": "Unknown",
-        "country": "Iceland",
-        "imageLink": "http://www.100bestbooks.xyz/static/images/njals-saga.jpg",
-        "language": "Old Norse",
-        "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
-        "pages": 384,
-        "title": "Nj\u00e1l's Saga",
-        "year": 1350
-    },
-    {
-        "author": "Jane Austen",
-        "country": "United Kingdom",
-        "imageLink": "http://www.100bestbooks.xyz/static/images/pride-and-prejudice.jpg",
-        "language": "English",
-        "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
-        "pages": 226,
-        "title": "Pride and Prejudice",
-        "year": 1813
-    },
-    {
-        "author": "Honor\u00e9 de Balzac",
-        "country": "France",
-        "imageLink": "http://www.100bestbooks.xyz/static/images/le-pere-goriot.jpg",
-        "language": "French",
-        "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
-        "pages": 443,
-        "title": "Le P\u00e8re Goriot",
-        "year": 1835
-    },
-    {
-        "author": "Samuel Beckett",
-        "country": "Republic of Ireland",
-        "imageLink": "http://www.100bestbooks.xyz/static/images/molloy-malone-dies-the-unnamable.jpg",
-        "language": "French, English",
-        "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
-        "pages": 256,
-        "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
-        "year": 1952
     }
 ]
