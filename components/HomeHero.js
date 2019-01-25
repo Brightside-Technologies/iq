@@ -12,7 +12,7 @@ export default function HomeHero() {
                     <h1 className="title is-1 has-text-grey-darker pt-2 animated fadeInUp">
                         Isabel Quintero
                     </h1>
-                    <h2 className="subtitle is-2 has-text-grey pt-2 animated fadeInUp">
+                    <h2 className="subtitle is-4 has-text-primary has-text-weight-bold pt-2 animated fadeInUp">
                         Lorem Ipsum
                     </h2>
                 </div>

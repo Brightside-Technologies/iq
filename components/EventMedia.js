@@ -35,7 +35,7 @@ export default class EventMedia extends React.Component {
                             </div>
                         </div>
                     </Level>
-                    <Figure>
+                    <Figure className="shadow-sm">
                         <Img src={image} />
                     </Figure>
                     <Level className="pt-2 level is-mobile">

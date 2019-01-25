@@ -16,7 +16,7 @@ class Nav extends React.Component {
         const {router} = this.props;
         return (
             <nav
-                className="navbar has-background-white is-fixed-top"
+                className="shadow-sm navbar has-background-white is-fixed-top"
                 role="navigation"
                 aria-label="main navigation">
                 <div className="navbar-brand">
