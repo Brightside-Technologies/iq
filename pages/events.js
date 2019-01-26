@@ -1,4 +1,5 @@
 import MainLayout from "../containers/MainLayout";
+import AttentionBanner from "../components/AttentionBanner";
 import EventMedia from "../components/EventMedia";
 import PageTitleHeading from "../components/PageTitleHeading";
 
@@ -7,9 +8,9 @@ import eventsData from "../data/events.json";
 export default function EventsPage() {
     return (
         <MainLayout>
-            <section className="section">
+            <AttentionBanner>
                 <PageTitleHeading title="Events" />
-                <div className="container content is-medium">
+                <div className="content">
                     <p>
                         The Owl always takes her sleep during the day. Then after sundown, when the
                         rosy light fades from the sky and the shadows rise slowly through the wood,
@@ -18,7 +19,8 @@ export default function EventsPage() {
                         for the bugs and beetles, frogs and mice she likes so well to eat.
                     </p>
                 </div>
-            </section>
+            </AttentionBanner>
+
             <section className="section">
                 <div className="container">
                     {eventsData

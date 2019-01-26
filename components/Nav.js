@@ -27,17 +27,17 @@ class Nav extends React.Component {
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-facebook-f animated bounceIn" />
+                            <i className={`fab fa-facebook-f ${router.pathname === "/" ? "animated bounceIn" : ""}`} />
                         </a>
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-twitter animated bounceIn delay-half-s" />
+                            <i className={`fab fa-twitter  ${router.pathname === "/" ? "animated bounceIn delay-half-s" : ""}`} />
                         </a>
                     </Link>
                     <Link href="">
                         <a className="navbar-item">
-                            <i className="fab fa-instagram animated bounceIn delay-1s" />
+                            <i className={`fab fa-instagram  ${router.pathname === "/" ? "animated bounceIn delay-1s" : ""}`} />
                         </a>
                     </Link>
                     <a

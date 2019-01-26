@@ -1,5 +1,4 @@
 import MainLayout from "../containers/MainLayout";
-import BookMedia from "../components/BookMedia";
 import PageTitleHeading from "../components/PageTitleHeading";
 import AttentionBanner from "../components/AttentionBanner";
 import styled from "styled-components";
@@ -7,106 +6,61 @@ import styled from "styled-components";
 import workData from "../data/works.json";
 
 const Figure = styled.figure`
-    max-width: 175px;
     height: auto;
     overflow: hidden;
-    -moz-border-radius: 8px;
     border-radius: 8px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
 `;
 
-const Img = styled.img`
+const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-postiion: top;
+`;
+
+const FigCaption = styled.figcaption`
+    position: relative;
+    display: flex;
+    justify-content: center;
 `;
 
 const Article = styled.article`
     padding: 16px;
 `;
 
+const Columns = styled.div`
+    flex-wrap: wrap;
+`;
+
 export default function WorkPage() {
     return (
         <MainLayout>
-            <section className="section">
+            <AttentionBanner>
                 <PageTitleHeading title="Work" />
-                <div className="tile is-ancestor">
-                    <div className="tile is-parent">
-                        <Article className="tile is-child box has-background-light">
-                            <p className="title has-text-primary has-text-centered">
-                                {workData[3].title}
-                            </p>
-                            <div className="is-flex is-centered pb-3">
-                                <Figure>
-                                    <Img src={workData[3].imageLink} />
+                <p>
+                    The wise old Owl knew quite well that it would do no good to argue with the
+                    Grasshopper, nor with anybody else for that matter. Besides, her eyes were not
+                    sharp enough by day to permit her to punish the Grasshopper as he deserved. So
+                    she laid aside all hard words and spoke very kindly to him.
+                </p>
+            </AttentionBanner>
+            <section className="section">
+                <div className="container">
+                    <Columns className="columns">
+                        {workData.map((work, i) => (
+                            <div key={i} className="column is-one-quarter">
+                                <Figure className="image is-square box">
+                                    <Image src={work.imageLink} />
+                                    <FigCaption className="has-background-dark has-text-light">
+                                        <small className="has-text-centered">{work.title}</small>
+                                    </FigCaption>
                                 </Figure>
                             </div>
-                            <p>{workData[3].description}</p>
-                        </Article>
-                    </div>
-                    <div className="tile is-vertical is-8">
-                        <div className="tile">
-                            <div className="tile is-parent is-vertical">
-                                <Article className="tile is-child box has-background-light">
-                                    <p className="title has-text-primary has-text-centered-mobile">
-                                        {workData[0].title}
-                                    </p>
-                                    <div className="columns">
-                                        <p className="column is-8">{workData[0].description}</p>
-                                        <div className="column is-flex is-centered">
-                                            <Figure>
-                                                <Img src={workData[0].imageLink} />
-                                            </Figure>
-                                        </div>
-                                    </div>
-                                </Article>
-                                <Article className="tile is-child box has-background-light">
-                                    <p className="title has-text-primary has-text-centered-mobile">
-                                        {workData[1].title}
-                                    </p>
-                                    <div className="columns">
-                                        <div className="column is-4 is-flex is-centered">
-                                            <Figure>
-                                                <Img src={workData[1].imageLink} />
-                                            </Figure>
-                                        </div>
-                                        <div className="column">
-                                            <p>{workData[1].description}</p>
-                                        </div>
-                                    </div>
-                                </Article>
-                            </div>
-                            <div className="tile is-parent">
-                                <Article className="tile is-child box has-background-light">
-                                    <p className="title has-text-primary has-text-centered-mobile">
-                                        {workData[2].title}
-                                    </p>
-                                    <p>{workData[2].description}</p>
-                                    <div className="column is-flex is-centered">
-                                        <Figure>
-                                            <Img src={workData[2].imageLink} />
-                                        </Figure>
-                                    </div>
-                                </Article>
-                            </div>
-                        </div>
-                        <div className="tile is-parent">
-                            <Article className="tile is-child box has-background-light">
-                                <div className="columns">
-                                    <div className="column is-narrow is-flex-mobile is-centered">
-                                        <Figure>
-                                            <Img src={workData[4].imageLink} />
-                                        </Figure>
-                                    </div>
-                                    <div className="column">
-                                        <p className="title has-text-primary has-text-centered-mobile">
-                                            {workData[4].title}
-                                        </p>
-                                        <p>{workData[4].description}</p>
-                                    </div>
-                                </div>
-                            </Article>
-                        </div>
-                    </div>
+                        ))}
+                    </Columns>
                 </div>
             </section>
         </MainLayout>
