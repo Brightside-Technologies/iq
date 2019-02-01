@@ -23,9 +23,9 @@ export default class EventMedia extends React.Component {
     render() {
         const {title, image, description, location, address, start, end, url} = this.props;
         return (
-            <article className="media has-background-light p-2 rounded">
+            <article className="media has-background-grey-lighter p-2 rounded">
                 <div className="media-left d-flex flex-column align-items-center">
-                    <Level className="level is-mobile is-marginless has-background-light">
+                    <Level className="level is-mobile is-marginless">
                         <div className="level-item has-text-centered">
                             <div>
                                 <p className="heading is-size-7 is-marginless">

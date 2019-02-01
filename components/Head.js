@@ -1,4 +1,3 @@
-import React from "react";
 import NextHead from "next/head";
 import {string} from "prop-types";
 
@@ -15,7 +14,11 @@ const Head = props => (
         <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
         <link rel="apple-touch-icon" href="/static/touch-icon.png" />
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-        <link rel="icon" href="/static/favicon.ico" />
+        <link
+            href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAANR3PACoUbQA1SDcAPG1BAEUq/wAoH0kAKTMcAFunawBJf08AfHf/ACcQigAAAAAAAAAAAAAAAAAAAAAARAAEAAAAAABIMDkyuyAAADiXMrqqUgAAOTdhUREVYAAHZiuysiJgAAalUSsVqqYAalG2sbuxGmAqGyIiZisVICq7axUbYitSJRa6sbsbIasLa6sapbUlsAC6EqG7GmsAALpbWxWhsAAAAqGhu7sAAAAAtRpbAAAAAAACu7AAAAA7/wAAEB8AAAAPAAAABwAAgAcAAIADAAAAAQAAAAEAAAAAAAAAAAAAgAEAAMADAADABwAA4A8AAPA/AAD4fwAA"
+            rel="icon"
+            type="image/x-icon"
+        />
         <meta property="og:url" content={props.url || defaultOGURL} />
         <meta property="og:title" content={props.title || ""} />
         <meta property="og:description" content={props.description || defaultDescription} />
@@ -29,7 +32,7 @@ const Head = props => (
             defer
             src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
             integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
         />
     </NextHead>
 );

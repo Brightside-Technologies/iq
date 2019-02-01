@@ -12,6 +12,7 @@ class Nav extends React.Component {
     };
 
     render() {
+        const {email, facebook_url, twitter_url, instagram_url} = this.props;
         const {isNavbarOpen} = this.state;
         const {router} = this.props;
         return (
@@ -25,21 +26,34 @@ class Nav extends React.Component {
                             IQ
                         </a>
                     </Link>
-                    <Link href="">
-                        <a className="navbar-item">
-                            <i className={`fab fa-facebook-f ${router.pathname === "/" ? "animated bounceIn" : ""}`} />
-                        </a>
-                    </Link>
-                    <Link href="">
-                        <a className="navbar-item">
-                            <i className={`fab fa-twitter  ${router.pathname === "/" ? "animated bounceIn delay-half-s" : ""}`} />
-                        </a>
-                    </Link>
-                    <Link href="">
-                        <a className="navbar-item">
-                            <i className={`fab fa-instagram  ${router.pathname === "/" ? "animated bounceIn delay-1s" : ""}`} />
-                        </a>
-                    </Link>
+                    <a rel="noopener" href={`${facebook_url}`} className="navbar-item">
+                        <i
+                            className={`fab fa-facebook-f ${
+                                router.pathname === "/" ? "animated bounceIn" : ""
+                            }`}
+                        />
+                    </a>
+                    <a rel="noopener" href={`${twitter_url}`} className="navbar-item">
+                        <i
+                            className={`fab fa-twitter  ${
+                                router.pathname === "/" ? "animated bounceIn delay-half-s" : ""
+                            }`}
+                        />
+                    </a>
+                    <a rel="noopener" href={`${instagram_url}`} className="navbar-item">
+                        <i
+                            className={`fab fa-instagram  ${
+                                router.pathname === "/" ? "animated bounceIn delay-1s" : ""
+                            }`}
+                        />
+                    </a>
+                    <a href={`mailto:${email}`} className="navbar-item">
+                        <i
+                            className={`fas fa-envelope  ${
+                                router.pathname === "/" ? "animated bounceIn delay-1s" : ""
+                            }`}
+                        />
+                    </a>
                     <a
                         onClick={this.handleToggleNavbar}
                         role="button"

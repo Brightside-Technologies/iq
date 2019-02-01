@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import _awards from "../data/_awards";
 
 const ListItem = styled.div`
     display: flex;
@@ -7,10 +6,11 @@ const ListItem = styled.div`
     padding: 8px 0;
 `;
 
-export default function AwardsList() {
+export default function AwardsList(props) {
+    const {awards} = props;
     return (
         <div>
-            {_awards.map((award, i) => (
+            {awards.map((award, i) => (
                 <ListItem key={i}>
                     <p className="title is-5">{award.name}</p>
                     <p className="subtitle is-6">{award.date}</p>
