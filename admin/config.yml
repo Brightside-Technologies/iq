@@ -1,0 +1,52 @@
+backend:
+    name: git-gateway
+    branch: master
+    repo: Brightside-Technologies/iq
+accepted_roles:
+    - Administrator
+    - Editor
+display_url: https://iq.netlify.com/
+logo_url: https://bgcofcv.netlify.com/assets/images/hero-logo.png
+media_folder: static/uploads
+public_folder: static/uploads
+collections:
+    - name: global
+      label: Site-wide Settings
+      delete: false
+      description: Settings that are used throughout the entire site
+      extension: json
+      files:
+          - file: _data/_global.json
+            label: Site Metadata
+            name: site
+            editor:
+                overiew: false
+            fields:
+                - label: Site Title
+                  name: site_title
+                  widget: string
+                  hint: Used for SEO
+                - label: Default Site Description
+                  name: default_site_description
+                  widget: text
+                  hint: Used for SEO
+                - label: Email
+                  name: email
+                  widget: string
+                - label: Twitter Url
+                  name: twitter_url
+                  widget: string
+                - label: Twitter Username
+                  name: twitter_username
+                  widget: string
+                - label: Facebook Url
+                  name: facebook_url
+                  widget: string
+                - label: Instagram Url
+                  name: instagram_url
+                  widget: string
+                - label: Open Graph Image
+                  name: open_graph_image
+                  widget: image
+                  default: static/uploads/preview.jpg
+                  hint: This is the thumbnail that shows up when you share your site on Facebook or via an iMessage

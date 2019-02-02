@@ -1,7 +1,9 @@
-import Attribution from "./Attribution.js"
+import CallOut from "./CallOut.js";
 
 export default function Footer() {
-    return <footer className="footer has-background-grey-darker">
-        <Attribution/>
-    </footer>;
+    return (
+        <footer className="footer has-background-grey-darker">
+            <CallOut />
+        </footer>
+    );
 }

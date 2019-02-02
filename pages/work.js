@@ -7,10 +7,10 @@ import MarkedContent from "../components/MarkedContent";
 import BookMedia from "../components/BookMedia";
 
 export default function WorkPage({page}) {
-    const {title, content, works} = page;
+    const {title, description, content, works} = page;
     return (
         <MainLayout>
-            <Head description="" title={`${title} | La Isabel Quintero`} />
+            <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
                 <MarkedContent source={content} />

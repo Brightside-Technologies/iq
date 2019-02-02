@@ -102,36 +102,3 @@ export default function BookMedia(props) {
         </Row>
     );
 }
-
-{
-    /* <div>
-<p className="heading has-text-grey-dark has-text-weight-semibold">
-    Show Some Love
-</p>
-<nav className="level is-mobile">
-    <div className="level-left">
-        <Link href="">
-            <a className="level-item">
-                <span className="icon is-size-5">
-                    <i className="fab fa-facebook-f" />
-                </span>
-            </a>
-        </Link>
-        <Link href="">
-            <a className="level-item">
-                <span className="icon is-size-5">
-                    <i className="fab fa-twitter" />
-                </span>
-            </a>
-        </Link>
-        <Link href="">
-            <a className="level-item">
-                <span className="icon is-size-5">
-                    <i className="fab fa-instagram" />
-                </span>
-            </a>
-        </Link>
-    </div>
-</nav>
-</div> */
-}

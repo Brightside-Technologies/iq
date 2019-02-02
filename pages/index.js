@@ -4,11 +4,17 @@ import Head from "../components/Head";
 
 import "../styles/site.scss";
 
-const HomePage = () => (
-    <HomeLayout>
-        <Head description="" title={`Welcome! | La Isabel Quintero`} />
-        <HomeHero />
-    </HomeLayout>
-);
+export default function HomePage({page}) {
+    const {title, description, greeting, tagline, profile_image} = page;
+    return (
+        <HomeLayout>
+            <Head description={description} title={`${title} | La Isabel Quintero`} />
+            <HomeHero greeting={greeting} tagline={tagline} image={profile_image} />
+        </HomeLayout>
+    );
+}
 
-export default HomePage;
+HomePage.getInitialProps = async () => {
+    const data = await import("../_data/_home.json");
+    return data.default;
+};

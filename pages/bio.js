@@ -8,10 +8,10 @@ import MarkedContent from "../components/MarkedContent";
 import Blockquote from "../components/Blockquote";
 
 export default function BioPage({page}) {
-    const {title, awards, blockquote, about_me} = page;
+    const {title, description, awards, blockquote, about_me} = page;
     return (
         <MainLayout>
-            <Head description="" title={`${title} | La Isabel Quintero`} />
+            <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
                 {/* <Blockquote context="is-primary" citation={blockquote.source_title}>

@@ -7,10 +7,10 @@ import PageTitleHeading from "../components/PageTitleHeading";
 import MarkedContent from "../components/MarkedContent";
 
 export default function EventsPage({page}) {
-    const {title, content, events} = page;
+    const {title, description, content, events} = page;
     return (
         <MainLayout>
-            <Head description="" title={`${title} | La Isabel Quintero`} />
+            <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
                 <MarkedContent source={content} />

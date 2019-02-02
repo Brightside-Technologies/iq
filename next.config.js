@@ -1,3 +1,8 @@
+const fse = require("fs-extra");
+const {join} = require("path");
+//const {promisify} = require("util");
+//const copyFile = promisify(fse.copyFile);
+
 const {PHASE_PRODUCTION_SERVER} =
     process.env.NODE_ENV === "development"
         ? {} // We're never in "production server" phase when in development mode
@@ -19,6 +24,14 @@ const nextConfig = {
             return rule;
         });
         return config;
+    },
+    exportPathMap: async function(defaultPathMap, {dev, dir, outDir, distDir, buildId}) {
+        if (dev) {
+            console.log("defaultPathMap", defaultPathMap);
+            return defaultPathMap;
+        }
+        await fse.copy(join(dir, "admin"), join(outDir, "admin"));
+        return defaultPathMap;
     }
 };
 
