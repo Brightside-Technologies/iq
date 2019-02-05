@@ -37,6 +37,6 @@ export default function EventsPage({page}) {
 }
 
 EventsPage.getInitialProps = async () => {
-    const data = await import("../_data/_events.json");
+    const data = await import("../_data/_pages/_events.json");
     return data.default;
 };

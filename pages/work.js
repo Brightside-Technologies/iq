@@ -25,6 +25,6 @@ export default function WorkPage({page}) {
 }
 
 WorkPage.getInitialProps = async () => {
-    const data = await import("../_data/_work.json");
+    const data = await import("../_data/_pages/_work.json");
     return data.default;
 };

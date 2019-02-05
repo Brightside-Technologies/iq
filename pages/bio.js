@@ -14,9 +14,9 @@ export default function BioPage({page}) {
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
-                {/* <Blockquote context="is-primary" citation={blockquote.source_title}>
+                <Blockquote context="is-link" citation={blockquote.source}>
                     <MarkedContent source={blockquote.content} />
-                </Blockquote> */}
+                </Blockquote>
             </AttentionBanner>
             <Section>
                 <div className="tile is-ancestor">
@@ -54,6 +54,6 @@ export default function BioPage({page}) {
 }
 
 BioPage.getInitialProps = async () => {
-    const data = await import("../_data/_bio.json");
+    const data = await import("../_data/_pages/_bio.json");
     return data.default;
 };
