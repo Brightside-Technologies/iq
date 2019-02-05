@@ -51,13 +51,13 @@ collections:
                   default: static/uploads/preview.jpg
                   hint: This is the thumbnail that shows up when you share your site on Facebook or via an iMessage
 
-      - name: pages
-        label: Pages
-        delete: false
-        create: false
-        description: Manage site's page content
-        extension: json
-        files:
+    - name: pages
+      label: Pages
+      delete: false
+      create: false
+      description: Manage site's page content
+      extension: json
+      files:
           - file: _data/_pages/bio.js
             label: Bio
             name: bio
