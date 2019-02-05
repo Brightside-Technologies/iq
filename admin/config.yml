@@ -58,7 +58,7 @@ collections:
       description: Manage site's page content
       extension: json
       files:
-          - file: _data/_pages/bio.js
+          - file: _data/_pages/_bio.json
             label: Bio
             name: bio
             fields:
