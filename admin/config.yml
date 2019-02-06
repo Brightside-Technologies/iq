@@ -58,6 +58,27 @@ collections:
       description: Manage site's page content
       extension: json
       files:
+          - file: _data/_pages/_home.json
+            label: Home
+            name: home
+            fields:
+                - label: Page Title
+                  name: title
+                  widget: string
+                - label: Page Description
+                  name: description
+                  widget: text
+                  hint: Used for SEO
+                - label: Greeting
+                  name: greeting
+                  widget: markdown
+                - label: Tagline
+                  name: tagline
+                  widget: markdown
+                - label: Picture
+                  name: profile_image
+                  widget: image
+
           - file: _data/_pages/_bio.json
             label: Bio
             name: bio
@@ -125,3 +146,88 @@ collections:
                         name: name
                         widget: string
                         hint: Year award was received
+
+          - file: _data/_pages/_work.json
+            label: My Work
+            name: work
+            fields:
+                - label: Page Title
+                  name: title
+                  widget: string
+                - label: Page Description
+                  name: description
+                  widget: text
+                  hint: Used for SEO
+                - label: Content
+                  name: content
+                  widget: markdown
+                - label: List of Work
+                  name: works
+                  widget: list
+                  fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: markdown
+                      - label: Picture
+                        name: image
+                        widget: image
+                      - label: Link
+                        name: link
+                        widget: string
+                        hint: Link to more information about your work, where to buy, etc.
+                      - label: Publish Date
+                        name: publish_date
+                        widget: date
+                        default: ""
+                        format: "YYYY"
+                      - label: Blurb
+                        name: blurb
+                        widget: object
+                        hint: Blurb about your work
+                        required: false
+                        fields:
+                            - label: Quote
+                              name: content
+                              widget: markdown
+                            - label: Source
+                              name: source
+                              widget: object
+                              fields:
+                                  - label: Person
+                                    name: person
+                                    widget: string
+                                    required: false
+                                    hint: Name of the person who gave the quote
+                                  - label: Picture
+                                    name: image
+                                    widget: image
+                                    required: false
+                                    hint: Optional - Could be the picture of the person or the company's logo. Here, you are actually uploading the picture.
+                                  - label: Picture Link
+                                    name: image
+                                    widget: string
+                                    required: false
+                                    hint: Optional - Could be the picture of the person or the company's logo. This is just the link to an image you might find online.
+                                  - label: Company
+                                    name: company
+                                    widget: string
+                                    required: false
+                                    hint: Optionally, you can name a company in addition to/instead of a person
+                      - label: Publisher
+                        name: publisher
+                        hint: Publisher information
+                        widget: object
+                        fields:
+                            - label: Name
+                              name: name
+                              widget: string
+                            - label: Url
+                              name: url
+                              widget: string
+                            - label: Logo
+                              name: logo
+                              widget: string
+                              hint: Url of publisher's image

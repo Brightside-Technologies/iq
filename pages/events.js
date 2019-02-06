@@ -6,8 +6,8 @@ import EventMedia from "../components/EventMedia";
 import PageTitleHeading from "../components/PageTitleHeading";
 import MarkedContent from "../components/MarkedContent";
 
-export default function EventsPage({page}) {
-    const {title, description, content, events} = page;
+export default function EventsPage(props) {
+    const {title, description, content, events} = props;
     return (
         <MainLayout>
             <Head description={description} title={`${title} | La Isabel Quintero`} />

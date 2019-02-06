@@ -1,9 +1,7 @@
 {
-    "page": {
-        "title": "Welcome!",
-        "greeting": "Isabel Quintero",
-        "tagline": "Lorem Ipsum",
-        "description": "Hi! I'm Isabel",
-        "profile_image": "/static/uploads/iq.jpg"
-    }
+    "title": "Welcome!",
+    "description": "Hi! I'm Isabel",
+    "greeting": "Isabel Quintero",
+    "tagline": "Lorem Ipsum",
+    "profile_image": "/static/uploads/iq.jpg"
 }

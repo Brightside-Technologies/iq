@@ -4,8 +4,8 @@ import Head from "../components/Head";
 
 import "../styles/site.scss";
 
-export default function HomePage({page}) {
-    const {title, description, greeting, tagline, profile_image} = page;
+export default function HomePage(props) {
+    const {title, description, greeting, tagline, profile_image} = props;
     return (
         <HomeLayout>
             <Head description={description} title={`${title} | La Isabel Quintero`}>

@@ -6,8 +6,8 @@ import AttentionBanner from "../components/AttentionBanner";
 import MarkedContent from "../components/MarkedContent";
 import BookMedia from "../components/BookMedia";
 
-export default function WorkPage({page}) {
-    const {title, description, content, works} = page;
+export default function WorkPage(props) {
+    const {title, description, content, works} = props;
     return (
         <MainLayout>
             <Head description={description} title={`${title} | La Isabel Quintero`} />

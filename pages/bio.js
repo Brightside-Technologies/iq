@@ -7,8 +7,8 @@ import AttentionBanner from "../components/AttentionBanner";
 import MarkedContent from "../components/MarkedContent";
 import Blockquote from "../components/Blockquote";
 
-export default function BioPage({page}) {
-    const {title, description, awards, blockquote, about_me} = page;
+export default function BioPage(props) {
+    const {title, description, awards, blockquote, about_me} = props;
     return (
         <MainLayout>
             <Head description={description} title={`${title} | La Isabel Quintero`} />

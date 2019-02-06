@@ -1,47 +1,45 @@
 {
-    "page": {
-        "title": "Bio",
-        "description": "",
-        "about_me": "A Wolf had been feasting too greedily, and a bone had stuck crosswise in his throat. He could get it neither up nor down, and of course he could not eat a thing. Naturally that was an awful state of affairs for a greedy Wolf.\n\nSo away he hurried to the Crane. He was sure that she, with her long neck and bill, would easily be able to reach the bone and pull it out.\n\n\"I will reward you very handsomely,\" said the Wolf, \"if you pull that bone out for me.\"\n\nThe Crane, as you can imagine, was very uneasy about putting her head in a Wolf's throat. But she was grasping in nature, so she did what the Wolf asked her to do.\n\nWhen the Wolf felt that the bone was gone, he started to walk away.\n\n\"But what about my reward!\" called the Crane anxiously.\n\n\"What!\" snarled the Wolf, whirling around. \"Haven't you got it? Isn't it enough that I let you take your head out of my mouth without snapping it off?\"\n\nExpect no reward for serving the wicked.",
-        "blockquote": {
-            "content": "Isabel is **the cat's pajamas**!  The Best!",
-            "source": {
-                "person": "John Doe",
-                "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                "company": "The Boring Company"
-            }
+    "title": "Bio",
+    "description": "",
+    "about_me": "A Wolf had been feasting too greedily, and a bone had stuck crosswise in his throat. He could get it neither up nor down, and of course he could not eat a thing. Naturally that was an awful state of affairs for a greedy Wolf.\n\nSo away he hurried to the Crane. He was sure that she, with her long neck and bill, would easily be able to reach the bone and pull it out.\n\n\"I will reward you very handsomely,\" said the Wolf, \"if you pull that bone out for me.\"\n\nThe Crane, as you can imagine, was very uneasy about putting her head in a Wolf's throat. But she was grasping in nature, so she did what the Wolf asked her to do.\n\nWhen the Wolf felt that the bone was gone, he started to walk away.\n\n\"But what about my reward!\" called the Crane anxiously.\n\n\"What!\" snarled the Wolf, whirling around. \"Haven't you got it? Isn't it enough that I let you take your head out of my mouth without snapping it off?\"\n\nExpect no reward for serving the wicked.",
+    "blockquote": {
+        "content": "Isabel is **the cat's pajamas**!  The Best!",
+        "source": {
+            "person": "John Doe",
+            "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
+            "company": "The Boring Company"
+        }
+    },
+    "awards": [
+        {
+            "name": "Lorem Ipsum Dolor Sit Amet",
+            "link": null,
+            "description": "",
+            "date": "2019"
         },
-        "awards": [
-            {
-                "name": "Lorem Ipsum Dolor Sit Amet",
-                "link": null,
-                "description": "",
-                "date": "2019"
-            },
-            {
-                "name": "Excepteur Sint Occaecat Cupidatat Non Proident",
-                "link": null,
-                "description": "",
-                "date": "2018"
-            },
-            {
-                "name": "vel Illum Qui Dolorem",
-                "link": null,
-                "description": "",
-                "date": "2018"
-            },
-            {
-                "name": "Nemo Enim Ipsam Voluptatem",
-                "link": null,
-                "description": "",
-                "date": "2017"
-            },
-            {
-                "name": "Quis Autem Vel Eum Iure",
-                "link": null,
-                "description": "",
-                "date": "2015"
-            }
-        ]
-    }
+        {
+            "name": "Excepteur Sint Occaecat Cupidatat Non Proident",
+            "link": null,
+            "description": "",
+            "date": "2018"
+        },
+        {
+            "name": "vel Illum Qui Dolorem",
+            "link": null,
+            "description": "",
+            "date": "2018"
+        },
+        {
+            "name": "Nemo Enim Ipsam Voluptatem",
+            "link": null,
+            "description": "",
+            "date": "2017"
+        },
+        {
+            "name": "Quis Autem Vel Eum Iure",
+            "link": null,
+            "description": "",
+            "date": "2015"
+        }
+    ]
 }
