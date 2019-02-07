@@ -143,7 +143,7 @@ collections:
                         required: false
                         hint: Optional
                       - label: Date
-                        name: name
+                        name: date
                         widget: string
                         hint: Year award was received
 
@@ -231,3 +231,56 @@ collections:
                               name: logo
                               widget: string
                               hint: Url of publisher's image
+
+          - file: _data/_pages/_events.json
+            label: Events
+            name: events
+            fields:
+                - label: Page Title
+                  name: title
+                  widget: string
+                - label: Page Description
+                  name: description
+                  widget: text
+                  hint: Used for SEO
+                - label: Content
+                  name: content
+                  widget: markdown
+                - label: Events
+                  name: events
+                  widget: list
+                  fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: markdown
+                      - label: Link
+                        name: url
+                        widget: string
+                        hint: Link to more information about event.
+                      - label: Start
+                        name: start
+                        widget: datetime
+                        default: ""
+                        format: ""
+                      - label: End
+                        name: end
+                        widget: datetime
+                        default: ""
+                        format: ""
+                      - label: Location
+                        name: location
+                        widget: string
+                      - label: Address
+                        name: address
+                        widget: string
+                      - label: Event Picture
+                        name: photo_url
+                        widget: string
+                        hint: Url to image of event promotion or flyer
+                      - label: Event Picture
+                        name: photo_url
+                        widget: image
+                        hint: Uploaded image
