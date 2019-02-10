@@ -61,6 +61,8 @@ collections:
           - file: _data/_pages/_home.json
             label: Home
             name: home
+            editor:
+                preview: false
             fields:
                 - label: Page Title
                   name: title
@@ -82,6 +84,8 @@ collections:
           - file: _data/_pages/_bio.json
             label: Bio
             name: bio
+            editor:
+                preview: false
             fields:
                 - label: Page Title
                   name: title
@@ -150,6 +154,8 @@ collections:
           - file: _data/_pages/_work.json
             label: My Work
             name: work
+            editor:
+                preview: false
             fields:
                 - label: Page Title
                   name: title
@@ -235,6 +241,8 @@ collections:
           - file: _data/_pages/_events.json
             label: Events
             name: events
+            editor:
+                preview: false
             fields:
                 - label: Page Title
                   name: title
