@@ -50,7 +50,7 @@ class Nav extends React.Component {
                     <a href={`mailto:${email}`} className="navbar-item">
                         <i
                             className={`fas fa-envelope  ${
-                                router.pathname === "/" ? "animated bounceIn delay-1s" : ""
+                                router.pathname === "/" ? "animated bounceIn delay-1-half-s" : ""
                             }`}
                         />
                     </a>
