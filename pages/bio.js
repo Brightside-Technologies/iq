@@ -7,10 +7,10 @@ import AttentionBanner from "../components/AttentionBanner";
 import MarkedContent from "../components/MarkedContent";
 import Blockquote from "../components/Blockquote";
 
-export default function BioPage(props) {
-    const {title, description, awards, blockquote, about_me} = props;
+export default function BioPage({data, metadata}) {
+    const {title, description, awards, blockquote, about_me} = data;
     return (
-        <MainLayout>
+        <MainLayout metadata={metadata}>
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
@@ -54,6 +54,14 @@ export default function BioPage(props) {
 }
 
 BioPage.getInitialProps = async () => {
-    const data = await import("../_data/_pages/_bio.json");
-    return data.default;
+    const dataAsync = import("../_data/_pages/_bio.json");
+    const metadataAsync = import("../_data/_metadata.json");
+
+    const data = await dataAsync;
+    const metadata = await metadataAsync;
+
+    return {
+        data: data.default,
+        metadata: metadata.default
+    };
 };

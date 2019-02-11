@@ -4,10 +4,10 @@ import Head from "../components/Head";
 
 import "../styles/site.scss";
 
-export default function HomePage(props) {
-    const {title, description, greeting, tagline, profile_image} = props;
+export default function HomePage({data, metadata}) {
+    const {title, description, greeting, tagline, profile_image} = data;
     return (
-        <HomeLayout>
+        <HomeLayout metadata={metadata}>
             <Head description={description} title={`${title} | La Isabel Quintero`}>
                 <script
                     type="text/javascript"
@@ -20,6 +20,14 @@ export default function HomePage(props) {
 }
 
 HomePage.getInitialProps = async () => {
-    const data = await import("../_data/_pages/_home.json");
-    return data.default;
+    const dataAsync = import("../_data/_pages/_home.json");
+    const metadataAsync = import("../_data/_metadata.json");
+
+    const data = await dataAsync;
+    const metadata = await metadataAsync;
+
+    return {
+        data: data.default,
+        metadata: metadata.default
+    };
 };

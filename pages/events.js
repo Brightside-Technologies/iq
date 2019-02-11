@@ -12,10 +12,10 @@ const Notification = styled.div`
     font-size: 18px;
 `;
 
-export default function EventsPage(props) {
-    const {title, description, content, events} = props;
+export default function EventsPage({data, metadata}) {
+    const {title, description, content, events} = data;
     return (
-        <MainLayout>
+        <MainLayout metadata={metadata}>
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
@@ -45,6 +45,14 @@ export default function EventsPage(props) {
 }
 
 EventsPage.getInitialProps = async () => {
-    const data = await import("../_data/_pages/_events.json");
-    return data.default;
+    const dataAsync = import("../_data/_pages/_events.json");
+    const metadataAsync = import("../_data/_metadata.json");
+
+    const data = await dataAsync;
+    const metadata = await metadataAsync;
+
+    return {
+        data: data.default,
+        metadata: metadata.default
+    };
 };

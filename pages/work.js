@@ -12,10 +12,10 @@ const Notification = styled.div`
     font-size: 18px;
 `;
 
-export default function WorkPage(props) {
-    const {title, description, content, works} = props;
+export default function WorkPage({data, metadata}) {
+    const {title, description, content, works} = data;
     return (
-        <MainLayout>
+        <MainLayout metadata={metadata}>
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
@@ -33,6 +33,14 @@ export default function WorkPage(props) {
 }
 
 WorkPage.getInitialProps = async () => {
-    const data = await import("../_data/_pages/_work.json");
-    return data.default;
+    const dataAsync = import("../_data/_pages/_work.json");
+    const metadataAsync = import("../_data/_metadata.json");
+
+    const data = await dataAsync;
+    const metadata = await metadataAsync;
+
+    return {
+        data: data.default,
+        metadata: metadata.default
+    };
 };

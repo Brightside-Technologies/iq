@@ -30,6 +30,7 @@ collections:
                   name: default_site_description
                   widget: text
                   hint: Used for SEO
+                  required: false
                 - label: Email
                   name: email
                   widget: string
@@ -49,6 +50,7 @@ collections:
                   name: open_graph_image
                   widget: image
                   default: static/uploads/preview.jpg
+                  required: false
                   hint: This is the thumbnail that shows up when you share your site on Facebook or via an iMessage
 
     - name: pages
