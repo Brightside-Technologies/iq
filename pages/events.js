@@ -9,6 +9,7 @@ import styled from "styled-components";
 
 const Notification = styled.div`
     background-color: rgba(96, 60, 84, 0.75) !important;
+    font-size: 18px;
 `;
 
 export default function EventsPage(props) {

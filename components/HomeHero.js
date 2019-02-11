@@ -7,7 +7,7 @@ export default function HomeHero(props) {
                     <figure className="avatar-figure image is-384x384 animated fadeInDown">
                         <img className="is-rounded border border-white avatar" src={image} />
                     </figure>
-                    <h1 className="title is-1 has-text-grey-darker pt-2 animated fadeInUp">
+                    <h1 className="is-family-primary title is-1 has-text-grey-darker pt-2 animated fadeInUp">
                         {greeting}
                     </h1>
                     <h2 className="subtitle is-4 has-text-primary has-text-weight-bold pt-2 animated fadeInUp">

@@ -14,3 +14,15 @@
 .animated.delay-1-half-s {
     animation-delay: 1.5s;
 }
+
+html {
+    font-family: $family-secondary;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: $family-secondary;
+}

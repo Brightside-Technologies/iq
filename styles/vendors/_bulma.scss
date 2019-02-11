@@ -6,9 +6,12 @@
 @import "~bulma/sass/utilities/derived-variables";
 
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lora|Lato:400,700");
 
-$family-sans-serif: "Nunito", sans-serif;
+$family-primary: "Lora", sans-serif;
+$family-secondary: "Lato", sans-serif;
+$family-sans-serif: "Lato", sans-serif;
+
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $grey-lighter: $beige-lighter;
@@ -84,4 +87,5 @@ $shades: mergeColorMaps(
     $custom-shades
 );
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
+
 @import "~bulma";
