@@ -26,21 +26,33 @@ class Nav extends React.Component {
                             IQ
                         </a>
                     </Link>
-                    <a rel="noopener" href={`${facebook_url}`} className="navbar-item">
+                    <a
+                        rel="noopener"
+                        target="_blank"
+                        href={`${facebook_url}`}
+                        className="navbar-item">
                         <i
                             className={`fab fa-facebook-f ${
                                 router.pathname === "/" ? "animated bounceIn" : ""
                             }`}
                         />
                     </a>
-                    <a rel="noopener" href={`${twitter_url}`} className="navbar-item">
+                    <a
+                        rel="noopener"
+                        target="_blank"
+                        href={`${twitter_url}`}
+                        className="navbar-item">
                         <i
                             className={`fab fa-twitter  ${
                                 router.pathname === "/" ? "animated bounceIn delay-half-s" : ""
                             }`}
                         />
                     </a>
-                    <a rel="noopener" href={`${instagram_url}`} className="navbar-item">
+                    <a
+                        rel="noopener"
+                        target="_blank"
+                        href={`${instagram_url}`}
+                        className="navbar-item">
                         <i
                             className={`fab fa-instagram  ${
                                 router.pathname === "/" ? "animated bounceIn delay-1s" : ""

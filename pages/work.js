@@ -5,6 +5,11 @@ import PageTitleHeading from "../components/PageTitleHeading";
 import AttentionBanner from "../components/AttentionBanner";
 import MarkedContent from "../components/MarkedContent";
 import BookMedia from "../components/BookMedia";
+import styled from "styled-components";
+
+const Notification = styled.div`
+    background-color: rgba(96, 60, 84, 0.75) !important;
+`;
 
 export default function WorkPage(props) {
     const {title, description, content, works} = props;
@@ -13,7 +18,9 @@ export default function WorkPage(props) {
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
-                <MarkedContent source={content} />
+                <Notification className="notification">
+                    <MarkedContent source={content} />
+                </Notification>
             </AttentionBanner>
             <Section>
                 {works.map((work, i) => (

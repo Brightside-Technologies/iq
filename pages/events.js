@@ -5,6 +5,11 @@ import AttentionBanner from "../components/AttentionBanner";
 import EventMedia from "../components/EventMedia";
 import PageTitleHeading from "../components/PageTitleHeading";
 import MarkedContent from "../components/MarkedContent";
+import styled from "styled-components";
+
+const Notification = styled.div`
+    background-color: rgba(96, 60, 84, 0.75) !important;
+`;
 
 export default function EventsPage(props) {
     const {title, description, content, events} = props;
@@ -13,7 +18,9 @@ export default function EventsPage(props) {
             <Head description={description} title={`${title} | La Isabel Quintero`} />
             <AttentionBanner>
                 <PageTitleHeading title={title} />
-                <MarkedContent source={content} />
+                <Notification className="notification">
+                    <MarkedContent source={content} />
+                </Notification>
             </AttentionBanner>
             <Section>
                 {events
