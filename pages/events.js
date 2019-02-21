@@ -5,6 +5,7 @@ import AttentionBanner from "../components/AttentionBanner";
 import EventMedia from "../components/EventMedia";
 import PageTitleHeading from "../components/PageTitleHeading";
 import MarkedContent from "../components/MarkedContent";
+import isAfter from "date-fns/is_after";
 import styled from "styled-components";
 
 const Notification = styled.div`
@@ -26,6 +27,11 @@ export default function EventsPage({data, metadata}) {
             <Section>
                 {events
                     .sort((a, b) => new Date(a.start) - new Date(b.start))
+                    .filter(
+                        event =>
+                            isAfter(new Date(event.start), new Date()) &&
+                            isAfter(new Date(event.end), new Date())
+                    )
                     .map((event, i) => (
                         <EventMedia
                             key={i}
@@ -36,7 +42,7 @@ export default function EventsPage({data, metadata}) {
                             address={event.address}
                             start={event.start}
                             end={event.end}
-                            link={event.url}
+                            url={event.url}
                         />
                     ))}
             </Section>

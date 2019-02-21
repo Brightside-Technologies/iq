@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MarkedContent from "../components/MarkedContent";
 import Blockquote from "../components/Blockquote";
+import SocialSharingButtons from "./SocialSharingButtons";
 import styled from "styled-components";
 
 const Figure = styled.figure`
@@ -57,47 +58,16 @@ export default function BookMedia(props) {
                         <MarkedContent source={blurb.content} />
                     </Blockquote>
                 </div>
-                <div className="pt-3">
-                    <div>
-                        <p className="heading has-text-grey-dark has-text-weight-semibold">
-                            Show Some Love
-                        </p>
-                        <nav className="level is-mobile">
-                            <div className="level-left">
-                                <Link href="">
-                                    <a className="level-item">
-                                        <span className="icon is-size-5">
-                                            <i className="fab fa-facebook-f" />
-                                        </span>
-                                    </a>
-                                </Link>
-                                <Link href="">
-                                    <a className="level-item">
-                                        <span className="icon is-size-5">
-                                            <i className="fab fa-twitter" />
-                                        </span>
-                                    </a>
-                                </Link>
-                                <Link href="">
-                                    <a className="level-item">
-                                        <span className="icon is-size-5">
-                                            <i className="fab fa-instagram" />
-                                        </span>
-                                    </a>
-                                </Link>
-                                <a
-                                    href={link}
-                                    target="_blank"
-                                    rel="noopener"
-                                    className="level-item">
-                                    <span className="icon is-size-5">
-                                        <i className="fas fa-heart" />
-                                    </span>
-                                </a>
-                            </div>
-                        </nav>
+                {link && (
+                    <div className="pt-3">
+                        <div>
+                            <p className="m-0 ml-2 heading has-text-link has-text-weight-semibold">
+                                Show Some Love
+                            </p>
+                            <SocialSharingButtons label={title} link={link} />
+                        </div>
                     </div>
-                </div>
+                )}
             </Content>
         </Row>
     );

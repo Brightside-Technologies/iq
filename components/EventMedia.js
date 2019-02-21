@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SocialSharingButtons from "./SocialSharingButtons";
 import {format} from "date-fns";
 import styled from "styled-components";
 
@@ -24,7 +24,7 @@ export default class EventMedia extends React.Component {
         const {title, image, description, location, address, start, end, url} = this.props;
         return (
             <article className="media has-background-grey-lighter p-2 rounded">
-                <div className="media-left d-flex flex-column align-items-center">
+                <div className="media-left d-flex flex-column align-items-center justify-content-between">
                     <Level className="level is-mobile is-marginless">
                         <div className="level-item has-text-centered">
                             <div>
@@ -38,29 +38,13 @@ export default class EventMedia extends React.Component {
                     <Figure className="shadow-sm">
                         <Img src={image} />
                     </Figure>
-                    <Level className="pt-2 level is-mobile">
-                        <Link href="">
-                            <a className="level-item">
-                                <span className="icon is-size-5">
-                                    <i className="fab fa-facebook-f" />
-                                </span>
-                            </a>
-                        </Link>
-                        <Link href="">
-                            <a className="level-item">
-                                <span className="icon is-size-5">
-                                    <i className="fab fa-twitter" />
-                                </span>
-                            </a>
-                        </Link>
-                        <Link href="">
-                            <a className="level-item">
-                                <span className="icon is-size-5">
-                                    <i className="fab fa-instagram" />
-                                </span>
-                            </a>
-                        </Link>
-                    </Level>
+                    <a
+                        className="mt-1 button is-link is-inverted is-small is-uppercase"
+                        href={url}
+                        rel="noopener"
+                        target="_blank">
+                        View Details
+                    </a>
                 </div>
                 <div className="media-content">
                     <div className="content">
@@ -78,31 +62,14 @@ export default class EventMedia extends React.Component {
                             )}-${format(end, "hh:mma")}`}</small>
                         </div>
                     </div>
-                    {/* <nav className="level is-mobile">
-                        <div className="level-left">
-                            <Link href="">
-                                <a className="level-item">
-                                    <span className="icon is-size-5">
-                                        <i className="fab fa-facebook-f" />
-                                    </span>
-                                </a>
-                            </Link>
-                            <Link href="">
-                                <a className="level-item">
-                                    <span className="icon is-size-5">
-                                        <i className="fab fa-twitter" />
-                                    </span>
-                                </a>
-                            </Link>
-                            <Link href="">
-                                <a className="level-item">
-                                    <span className="icon is-size-5">
-                                        <i className="fab fa-instagram" />
-                                    </span>
-                                </a>
-                            </Link>
+                    {!!url && (
+                        <div>
+                            <p className="m-0 ml-2 heading has-text-link has-text-weight-semibold">
+                                Show Some Love
+                            </p>
+                            <SocialSharingButtons label={`${title} @ ${location}`} link={url} />
                         </div>
-                    </nav> */}
+                    )}
                 </div>
             </article>
         );
