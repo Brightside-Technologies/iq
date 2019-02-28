@@ -1,11 +1,10 @@
 {
-    "site_title": "La Isabel Quintero",
-    "default_site_description": "",
-    "email": "isabelquinterowrites@gmail.com",
-    "twitter_url": "https://twitter.com",
-    "twitter_username": "username",
-    "facebook_url": "https://facebook.com",
-    "instagram_url": "https://instagram.com",
-    "open_graph_image": "",
-    "hero_background": ""
+  "site_title": "La Isabel Quintero",
+  "default_site_description": "",
+  "email": "isabelquinterowrites@gmail.com",
+  "twitter_url": "https://twitter.com/isabelinpieces",
+  "twitter_username": "@isabelinpieces",
+  "facebook_url": "https://facebook.com",
+  "instagram_url": "https://instagram.com",
+  "open_graph_image": ""
 }
