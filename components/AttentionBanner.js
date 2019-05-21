@@ -9,7 +9,7 @@ export default function AttentionBanner(props) {
     const {children} = props;
     return (
         <Banner className="section hero is-primary">
-            <div className="hero-body">
+            <div className="hero-body is-paddingless">
                 <div className="container">{children}</div>
             </div>
         </Banner>
