@@ -25,26 +25,30 @@ export default class EventMedia extends React.Component {
         return (
             <article className="media has-background-grey-lighter p-2 rounded">
                 <div className="media-left d-flex flex-column align-items-center justify-content-between">
-                    <Level className="level is-mobile is-marginless">
-                        <div className="level-item has-text-centered">
-                            <div>
-                                <p className="heading is-size-7 is-marginless">
-                                    {format(start, "MMM")}
-                                </p>
-                                <p className="title has-text-link">{format(start, "DD")}</p>
+                    {start && (
+                        <Level className="level is-mobile is-marginless">
+                            <div className="level-item has-text-centered">
+                                <div>
+                                    <p className="heading is-size-7 is-marginless">
+                                        {format(start, "MMM")}
+                                    </p>
+                                    <p className="title has-text-link">{format(start, "DD")}</p>
+                                </div>
                             </div>
-                        </div>
-                    </Level>
+                        </Level>
+                    )}
                     <Figure className="shadow-sm">
                         <Img src={image} />
                     </Figure>
-                    <a
-                        className="mt-1 button is-link is-inverted is-small is-uppercase"
-                        href={url}
-                        rel="noopener"
-                        target="_blank">
-                        View Details
-                    </a>
+                    {url && (
+                        <a
+                            className="mt-1 button is-link is-inverted is-small is-uppercase"
+                            href={url}
+                            rel="noopener"
+                            target="_blank">
+                            View Details
+                        </a>
+                    )}
                 </div>
                 <div className="media-content">
                     <div className="content">
@@ -55,11 +59,13 @@ export default class EventMedia extends React.Component {
                             <small className="has-text-grey-darker is-size-6-desktop">
                                 {location}
                             </small>
-                            <small className="has-text-grey-dark">{address}</small>
-                            <small className="has-text-grey-dark">{`${format(
-                                start,
-                                "hh:mma"
-                            )}-${format(end, "hh:mma")}`}</small>
+                            {address && <small className="has-text-grey-dark">{address}</small>}
+                            {start && (
+                                <small className="has-text-grey-dark">{`${format(
+                                    start,
+                                    "hh:mma"
+                                )}-${format(end, "hh:mma")}`}</small>
+                            )}
                         </div>
                     </div>
                     {!!url && (

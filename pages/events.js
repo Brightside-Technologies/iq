@@ -22,6 +22,13 @@ export default function EventsPage({data, metadata}) {
                 isAfter(new Date(event.start), new Date()) &&
                 isAfter(new Date(event.end), new Date())
         );
+    const pastEvents = events
+        .sort((a, b) => new Date(a.start) - new Date(b.start))
+        .filter(
+            event =>
+                !isAfter(new Date(event.start), new Date()) &&
+                !isAfter(new Date(event.end), new Date())
+        );
     return (
         <MainLayout metadata={metadata}>
             <Head description={description} title={`${title} | La Isabel Quintero`} />
@@ -31,21 +38,33 @@ export default function EventsPage({data, metadata}) {
                     <MarkedContent source={content} />
                 </Notification>
             </AttentionBanner>
+            {upcomingEvents.length > 0 && (
+                <Section>
+                    <h1 className="heading">Upcoming</h1>
+                    {upcomingEvents.map((event, i) => (
+                        <EventMedia
+                            key={i}
+                            title={event.title}
+                            image={event.photo_url}
+                            description={event.description}
+                            location={event.location}
+                            address={event.address}
+                            start={event.start}
+                            end={event.end}
+                            url={event.url}
+                        />
+                    ))}
+                </Section>
+            )}
             <Section>
-                {upcomingEvents.length === 0 && (
-                    <h1 className="subtitle">There are no upcoming events at this time</h1>
-                )}
-                {upcomingEvents.map((event, i) => (
+                <h1 className="heading">Past</h1>
+                {pastEvents.map((event, i) => (
                     <EventMedia
                         key={i}
                         title={event.title}
                         image={event.photo_url}
                         description={event.description}
                         location={event.location}
-                        address={event.address}
-                        start={event.start}
-                        end={event.end}
-                        url={event.url}
                     />
                 ))}
             </Section>
