@@ -187,6 +187,8 @@ collections:
                         widget: markdown
                       - label: Picture
                         name: image
+                        required: false
+                        default: null
                         widget: image
                       - label: Link
                         name: link
@@ -195,7 +197,6 @@ collections:
                       - label: Publish Date
                         name: publish_date
                         widget: date
-                        format: "YYYY"
                         default: ""
                         dateFormat: true
                       - label: Blurb
@@ -235,6 +236,8 @@ collections:
                       - label: Publisher
                         name: publisher
                         hint: Publisher information
+                        required: false
+                        default: null
                         widget: object
                         fields:
                             - label: Name
@@ -286,6 +289,7 @@ collections:
                       - label: End
                         name: end
                         widget: datetime
+                        required: false
                         default: ""
                         format: ""
                       - label: Location
