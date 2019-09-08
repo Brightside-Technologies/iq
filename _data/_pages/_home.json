@@ -1,7 +1,7 @@
 {
-    "title": "Welcome!",
-    "description": "Hi! I'm Isabel",
-    "greeting": "Isabel Quintero",
-    "tagline": "Lorem Ipsum",
-    "profile_image": "/static/uploads/iq.jpg"
+  "title": "Welcome!",
+  "description": "Hi! I'm Isabel",
+  "greeting": "Isabel Quintero",
+  "tagline": "Hello World!",
+  "profile_image": "/static/uploads/iq.jpg"
 }
