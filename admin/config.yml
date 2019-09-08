@@ -190,6 +190,11 @@ collections:
                         required: false
                         default: null
                         widget: image
+                      - label: Picture Url
+                        name: image
+                        required: false
+                        default: null
+                        widget: string
                       - label: Link
                         name: link
                         widget: string
