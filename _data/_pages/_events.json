@@ -1,47 +1,57 @@
 {
-    "title": "Events",
-    "description": "My events",
-    "content": "The Owl always takes her sleep during the day. Then after sundown, when the rosy light fades from the sky and the shadows rise slowly through the wood, out she comes ruffling and blinking from the old hollow tree. Now her weird \"hoo-hoo-hoo-oo-oo\" echoes through the quiet wood, and she begins her hunt for the bugs and beetles, frogs and mice she likes so well to eat.",
-    "events": [
-        {
-            "title": "Southwest Arts Festival Indio",
-            "description": "Lorep Ipsum...",
-            "url": "https://www.google.com",
-            "start": "2019-08-24T10:00",
-            "end": "2019-08-24T17:00",
-            "location": "Empire Polo Club",
-            "address": "81800 51st Avenue Indio, CA 92201",
-            "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54156458%2F122311870473%2F1%2Foriginal.20181219-172311?w=800&auto=compress&rect=0%2C27%2C930%2C465&s=85db33c531f127dbb96807176aab8553"
-        },
-        {
-            "title": "The Desert Redux BNP Opening Party II",
-            "description": "Lorep Ipsum...",
-            "url": "https://www.google.com",
-            "start": "2019-03-02T17:30",
-            "end": "2019-03-02T20:00",
-            "location": "Big Rock Pub",
-            "address": "79940 Westward Ho Drive Indio, CA 92201",
-            "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54432760%2F197546969271%2F1%2Foriginal.20181230-144538?w=800&auto=compress&rect=0%2C0%2C1590%2C795&s=94fff1580cc6c83a91176b7db98b49e6"
-        },
-        {
-            "title": "Cahuilla CUE Tech Fest",
-            "description": "Lorep Ipsum...",
-            "url": "https://www.google.com",
-            "start": "2019-02-02T08:00",
-            "end": "2019-02-02T16:00",
-            "location": "Desert Ridge Academy Middle School",
-            "address": "79767 Ave 39 Indio, CA 92203",
-            "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F51743438%2F266330179796%2F1%2Foriginal.jpg?w=800&auto=compress&rect=73%2C0%2C2296%2C1148&s=b34a512a78df6cc3870fce8c8e55b1e1"
-        },
-        {
-            "title": "Cat Petting",
-            "description": "Cats!",
-            "url": "https://www.example.com",
-            "start": "2019-09-15T00:00:00.000Z",
-            "end": "2019-09-16T00:00:00.000Z",
-            "location": "Verban Hills",
-            "address": "82130 Verbena Ave 92201 Indio CA",
-            "photo_url": "/static/uploads/mybook.jpeg"
-        }
-    ]
+  "title": "Events",
+  "description": "My events",
+  "content": "The Owl always takes her sleep during the day. Then after sundown, when the rosy light fades from the sky and the shadows rise slowly through the wood, out she comes ruffling and blinking from the old hollow tree. Now her weird \"hoo-hoo-hoo-oo-oo\" echoes through the quiet wood, and she begins her hunt for the bugs and beetles, frogs and mice she likes so well to eat.",
+  "events": [
+    {
+      "title": "Southwest Arts Festival Indio",
+      "description": "Lorep Ipsum...",
+      "url": "https://www.google.com",
+      "start": "2019-08-24T10:00",
+      "end": "2019-08-24T17:00",
+      "location": "Empire Polo Club",
+      "address": "81800 51st Avenue Indio, CA 92201",
+      "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54156458%2F122311870473%2F1%2Foriginal.20181219-172311?w=800&auto=compress&rect=0%2C27%2C930%2C465&s=85db33c531f127dbb96807176aab8553"
+    },
+    {
+      "title": "The Desert Redux BNP Opening Party II",
+      "description": "Lorep Ipsum...",
+      "url": "https://www.google.com",
+      "start": "2019-03-02T17:30",
+      "end": "2019-03-02T20:00",
+      "location": "Big Rock Pub",
+      "address": "79940 Westward Ho Drive Indio, CA 92201",
+      "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F54432760%2F197546969271%2F1%2Foriginal.20181230-144538?w=800&auto=compress&rect=0%2C0%2C1590%2C795&s=94fff1580cc6c83a91176b7db98b49e6"
+    },
+    {
+      "title": "Cahuilla CUE Tech Fest",
+      "description": "Lorep Ipsum...",
+      "url": "https://www.google.com",
+      "start": "2019-02-02T08:00",
+      "end": "2019-02-02T16:00",
+      "location": "Desert Ridge Academy Middle School",
+      "address": "79767 Ave 39 Indio, CA 92203",
+      "photo_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F51743438%2F266330179796%2F1%2Foriginal.jpg?w=800&auto=compress&rect=73%2C0%2C2296%2C1148&s=b34a512a78df6cc3870fce8c8e55b1e1"
+    },
+    {
+      "title": "Cat Petting",
+      "description": "Cats!",
+      "url": "https://www.example.com",
+      "start": "2019-09-15T00:00:00.000Z",
+      "end": "2019-09-16T00:00:00.000Z",
+      "location": "Verban Hills",
+      "address": "82130 Verbena Ave 92201 Indio CA",
+      "photo_url": "/static/uploads/mybook.jpeg"
+    },
+    {
+      "title": "Bilingual Book Fest ",
+      "description": "Bilingual books",
+      "url": "https://www.lapl.org/libros-fest",
+      "start": "2019-09-28T19:00:00.000Z",
+      "end": "2019-09-28T07:00:00.000Z",
+      "location": "Los Angeles Public Library ",
+      "address": "630 West 5th Street; Los Angeles, California",
+      "photo_url": "https://www.lapl.org/sites/default/files/LAPL_LA_LIBROS_FESTIVAL_2019_FACEBOOK_1230_630_v1.jpg"
+    }
+  ]
 }
