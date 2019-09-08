@@ -72,6 +72,8 @@ collections:
                 - label: Page Description
                   name: description
                   widget: text
+                  required: false
+                  default: ""
                   hint: Used for SEO
                 - label: Greeting
                   name: greeting
@@ -95,6 +97,8 @@ collections:
                 - label: Page Description
                   name: description
                   widget: text
+                  required: false
+                  default: ""
                   hint: Used for SEO
                 - label: About Me
                   name: about_me
@@ -165,6 +169,8 @@ collections:
                 - label: Page Description
                   name: description
                   widget: text
+                  required: false
+                  default: ""
                   hint: Used for SEO
                 - label: Content
                   name: content
@@ -189,13 +195,15 @@ collections:
                       - label: Publish Date
                         name: publish_date
                         widget: date
-                        default: ""
                         format: "YYYY"
+                        default: ""
+                        dateFormat: true
                       - label: Blurb
                         name: blurb
                         widget: object
                         hint: Blurb about your work
                         required: false
+                        default: null
                         fields:
                             - label: Quote
                               name: content
