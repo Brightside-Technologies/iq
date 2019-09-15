@@ -311,3 +311,30 @@ collections:
                         name: photo_url
                         widget: image
                         hint: Uploaded image
+
+          - file: _data/_pages/_faq.json
+            label: FAQ
+            name: faq
+            editor:
+                preview: false
+            fields:
+                - label: Page Title
+                  name: title
+                  widget: string
+                - label: Page Description
+                  name: description
+                  widget: text
+                  hint: Used for SEO
+                - label: Content
+                  name: content
+                  widget: markdown
+                - label: FAQ
+                  name: faq
+                  widget: list
+                  fields:
+                      - label: Question
+                        name: question
+                        widget: markdown
+                      - label: Answer
+                        name: answer
+                        widget: markdown
