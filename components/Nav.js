@@ -108,6 +108,22 @@ class Nav extends React.Component {
                                 Events
                             </a>
                         </Link>
+                        <Link href="/news">
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === "/news" ? "is-active" : ""
+                                }`}>
+                                News
+                            </a>
+                        </Link>
+                        <Link href="/faq">
+                            <a
+                                className={`navbar-item ${
+                                    router.pathname === "/faq" ? "is-active" : ""
+                                }`}>
+                                FAQ
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </nav>

@@ -24,6 +24,7 @@ export default function WorkPage({data, metadata}) {
                 </Notification>
             </AttentionBanner>
             <Section>
+                {/* TODO: sort by date desc */}
                 {works.map((work, i) => (
                     <BookMedia key={i} {...work} />
                 ))}

@@ -21,7 +21,17 @@ const Level = styled.nav`
 `;
 export default class EventMedia extends React.Component {
     render() {
-        const {title, image, description, location, address, start, end, url} = this.props;
+        const {
+            title,
+            image,
+            description,
+            location,
+            address,
+            start,
+            end,
+            url,
+            isShareable
+        } = this.props;
         return (
             <article className="media has-background-grey-lighter p-2 rounded">
                 <div className="media-left d-flex flex-column align-items-center justify-content-between">
@@ -42,7 +52,7 @@ export default class EventMedia extends React.Component {
                     </Figure>
                     {url && (
                         <a
-                            className="mt-1 button is-link is-inverted is-small is-uppercase"
+                            className="button is-link is-inverted is-small is-uppercase"
                             href={url}
                             rel="noopener"
                             target="_blank">
@@ -66,9 +76,10 @@ export default class EventMedia extends React.Component {
                                     "hh:mma"
                                 )}-${format(end, "hh:mma")}`}</small>
                             )}
+                            {description && <p className="is-size-6 my-2">{description}</p>}
                         </div>
                     </div>
-                    {!!url && (
+                    {!!url && isShareable && (
                         <div>
                             <p className="m-0 ml-2 heading has-text-link has-text-weight-semibold">
                                 Show Some Love

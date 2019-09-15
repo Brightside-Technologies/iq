@@ -52,6 +52,7 @@ export default function EventsPage({data, metadata}) {
                             start={event.start}
                             end={event.end}
                             url={event.url}
+                            isShareable={true}
                         />
                     ))}
                 </Section>
@@ -65,6 +66,8 @@ export default function EventsPage({data, metadata}) {
                         image={event.photo_url}
                         description={event.description}
                         location={event.location}
+                        url={event.url}
+                        isShareable={false}
                     />
                 ))}
             </Section>
