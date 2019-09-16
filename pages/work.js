@@ -25,9 +25,11 @@ export default function WorkPage({data, metadata}) {
             </AttentionBanner>
             <Section>
                 {/* TODO: sort by date desc */}
-                {works.map((work, i) => (
-                    <BookMedia key={i} {...work} />
-                ))}
+                {works
+                    .sort((a, b) => new Date(b.publish_date) - new Date(a.publish_date))
+                    .map((work, i) => (
+                        <BookMedia key={i} {...work} />
+                    ))}
             </Section>
         </MainLayout>
     );

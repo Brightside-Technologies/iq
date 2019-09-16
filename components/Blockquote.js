@@ -26,7 +26,7 @@ const CitationImage = styled.figure`
 
 export default function Blockquote(props) {
     const {children, citation, context} = props;
-    const {image, person, company} = citation;
+    const {image, person, company, link, title} = citation;
     return (
         <StyledBlockquote>
             <div className={`message ${context || ""}`}>
@@ -37,8 +37,17 @@ export default function Blockquote(props) {
                             <img className="is-rounded" src={image} />
                         </CitationImage>
                         <div>
-                            {person && <span>{person} &ndash;</span>}
-                            <cite title={company || person}>{company || person}</cite>
+                            {person && !link && <span>{person}</span>}
+                            {person && link && (
+                                <a href={link} target="_blank">
+                                    {person}
+                                </a>
+                            )}
+                            {(company || title) && (
+                                <span>
+                                    &ndash;<cite title={company || title}>{company || title}</cite>
+                                </span>
+                            )}
                         </div>
                     </QuoteFooter>
                 </div>

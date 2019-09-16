@@ -238,6 +238,11 @@ collections:
                                     widget: string
                                     required: false
                                     hint: Optionally, you can name a company in addition to/instead of a person
+                                  - label: Title
+                                    name: title
+                                    widget: string
+                                    required: false
+                                    hint: Instead of Company, you can list a person's title
                       - label: Publisher
                         name: publisher
                         hint: Publisher information
@@ -253,8 +258,12 @@ collections:
                               widget: string
                             - label: Logo
                               name: logo
+                              widget: image
+                              hint: Upload publisher's logo
+                            - label: Logo
+                              name: logo
                               widget: string
-                              hint: Url of publisher's image
+                              hint: Url of publisher's logo
 
           - file: _data/_pages/_events.json
             label: Events
