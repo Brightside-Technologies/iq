@@ -1,149 +1,26 @@
 {
-    "title": "Work",
-    "description": "",
-    "content": "The wise old Owl knew quite well that it would do no good to argue with the Grasshopper, nor with anybody else for that matter. Besides, her eyes were not sharp enough by day to permit her to punish the Grasshopper as he deserved. So she laid aside all hard words and spoke very kindly to him.",
-    "works": [
-        {
-            "title": "Things Fall Apart",
-            "description": "A Beetle once begged the Eagle to spare a Hare which had run to her for protection. But the Eagle pounced upon her prey, the sweep of her great wings tumbling the Beetle a dozen feet away. Furious at the disrespect shown her, the Beetle flew to the Eagle's nest and rolled out the eggs. Not one did she spare. You can buy it at [Barnes and Noble](https://www.barnesandnobles.com)",
-            "image": "http://www.100bestbooks.xyz/static/images/things-fall-apart.jpg",
-            "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "**The cat's pajamas**!  Add a book blurb here.",
-                "source": {
-                    "link": "https://godiego.me",
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Publisher Name",
-                "url": "https://google.com",
-                "logo": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2013/04/pub51.png?auto=format&q=60&fit=max&w=930"
-            }
-        },
-        {
-            "title": "Fairy tales",
-            "description": "A Beetle once begged the Eagle to spare a Hare which had run to her for protection. But the Eagle pounced upon her prey, the sweep of her great wings tumbling the Beetle a dozen feet away. Furious at the disrespect shown her, the Beetle flew to the Eagle's nest and rolled out the eggs. Not one did she spare",
-            "image": "http://www.100bestbooks.xyz/static/images/fairy-tales.jpg",
-            "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "The cat's pajamas!",
-                "source": {
-                    "title": "",
-                    "link": "https://godiego.me",
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Lorem Ipsum",
-                "url": "https://google.com",
-                "logo": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg"
-            }
-        },
-        {
-            "title": "The Divine Comedy",
-            "description": "A Fox and a Leopard, resting lazily after a generous dinner, amused themselves by disputing about their good looks. The Leopard was very proud of his glossy, spotted coat and made disdainful remarks about the Fox, whose appearance he declared was quite ordinary.",
-            "image": "http://www.100bestbooks.xyz/static/images/the-divine-comedy.jpg",
-            "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "The cat's pajamas!",
-                "source": {
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Lorem Ipsum",
-                "url": "https://google.com",
-                "logo": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg"
-            }
-        },
-        {
-            "title": "The Epic Of Gilgamesh",
-            "description": "As he came near, the Lion put out his paw, which was all swollen and bleeding, and Androcles found that a huge thorn had got into it, and was causing all the pain. He pulled out the thorn and bound up the paw of the Lion, who was soon able to rise and lick the hand of Androcles like a dog. Then the Lion took Androcles to his cave, and every day used to bring him meat from which to live.",
-            "image": "http://www.100bestbooks.xyz/static/images/the-epic-of-gilgamesh.jpg",
-            "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "The cat's pajamas!",
-                "source": {
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Lorem Ipsum",
-                "url": "https://google.com",
-                "logo": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg"
-            }
-        },
-        {
-            "title": "The Book Of Job",
-            "description": "Two Travellers, walking in the noonday sun, sought the shade of a widespreading tree to rest. As they lay looking up among the pleasant leaves, they saw that it was a Plane Tree",
-            "image": "http://www.100bestbooks.xyz/static/images/the-book-of-job.jpg",
-            "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "The cat's pajamas!",
-                "source": {
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Lorem Ipsum",
-                "url": "https://google.com",
-                "logo": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg"
-            }
-        },
-        {
-            "title": "One Thousand and One Nights",
-            "description": "Description",
-            "image": "http://www.100bestbooks.xyz/static/images/one-thousand-and-one-nights.jpg",
-            "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
-            "publish_date": 1836,
-            "blurb": {
-                "content": "The cat's pajamas!",
-                "source": {
-                    "person": "John Doe",
-                    "image": "https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg",
-                    "company": "The Boring Company"
-                }
-            },
-            "publisher": {
-                "name": "Lorem Ipsum",
-                "url": "https://google.com",
-                "logo": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg"
-            }
-        },
-        {
-            "title": "My Book",
-            "description": "This is my book. Buy it now.",
-            "image": "/static/uploads/mybook.jpeg",
-            "link": "https://www.example.com",
-            "publish_date": "2019-09-08T07:00:00.000Z",
-            "blurb": {
-                "content": "The best!",
-                "source": {
-                    "title": "Software Developer",
-                    "person": "Diego Bernal"
-                }
-            },
-            "publisher": {
-                "name": "My Publisher",
-                "url": "https://www.example.com",
-                "logo": "https://image.shutterstock.com/image-vector/b-logo-circle-sample-text-260nw-718146097.jpg"
-            }
+  "title": "Work",
+  "description": "",
+  "content": "The wise old Owl knew quite well that it would do no good to argue with the Grasshopper, nor with anybody else for that matter. Besides, her eyes were not sharp enough by day to permit her to punish the Grasshopper as he deserved. So she laid aside all hard words and spoke very kindly to him.",
+  "works": [
+    {
+      "title": "My Book",
+      "description": "This is my book. Buy it now [here](https://example.com).",
+      "image": "/static/uploads/mybook.jpeg",
+      "link": "https://www.example.com",
+      "publish_date": "2019-09-08T07:00:00.000Z",
+      "blurb": {
+        "content": "The best!",
+        "source": {
+          "person": "Diego Bernal",
+          "title": "Software Developer"
         }
-    ]
+      },
+      "publisher": {
+        "name": "My Publisher",
+        "url": "https://www.example.com",
+        "logo": "https://image.shutterstock.com/image-vector/b-logo-circle-sample-text-260nw-718146097.jpg"
+      }
+    }
+  ]
 }
