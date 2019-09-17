@@ -243,6 +243,11 @@ collections:
                                     widget: string
                                     required: false
                                     hint: Instead of Company, you can list a person's title
+                                  - label: Link
+                                    name: link
+                                    widget: string
+                                    required: false
+                                    hint: Source's link (website, LinkedIn, Twitter, etc)
                       - label: Publisher
                         name: publisher
                         hint: Publisher information
