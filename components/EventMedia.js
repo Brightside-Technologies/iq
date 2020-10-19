@@ -24,6 +24,7 @@ export default class EventMedia extends React.Component {
         const {
             title,
             image,
+            image_url,
             description,
             location,
             address,
@@ -48,7 +49,7 @@ export default class EventMedia extends React.Component {
                         </Level>
                     )}
                     <Figure className="shadow-sm">
-                        <Img src={image} />
+                        <Img src={image || image_url} />
                     </Figure>
                     {url && (
                         <a

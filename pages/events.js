@@ -45,7 +45,7 @@ export default function EventsPage({data, metadata}) {
                         <EventMedia
                             key={i}
                             title={event.title}
-                            image={event.photo_url}
+                            image={event.photo_url || event.photo}
                             description={event.description}
                             location={event.location}
                             address={event.address}
@@ -63,7 +63,7 @@ export default function EventsPage({data, metadata}) {
                     <EventMedia
                         key={i}
                         title={event.title}
-                        image={event.photo_url}
+                        image={event.photo_url || event.photo}
                         description={event.description}
                         location={event.location}
                         url={event.url}

@@ -36,15 +36,15 @@ const Row = styled.div`
 `;
 
 export default function BookMedia(props) {
-    const {title, image, link, description, blurb, publisher} = props;
+    const {title, image, image_url, link, description, blurb, publisher} = props;
     return (
         <Row className="columns">
             <div className="column is-one-quarter">
                 <Figure className="image is-4by5 shadow">
-                    <Img src={image} />
+                    <Img src={image || image_url} />
                     <FigCaption className="has-background-light">
                         <figure className="image is-32x32">
-                            <Img className="is-rounded p-1" src={publisher.logo} />
+                            <Img className="is-rounded p-1" src={publisher.logo || publisher.logo_url} />
                         </figure>
                         <small className="has-text-centered">{publisher.name}</small>
                     </FigCaption>

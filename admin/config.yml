@@ -126,7 +126,7 @@ collections:
                               required: false
                               hint: Optional - Could be the picture of the person or the company's logo. Here, you are actually uploading the picture.
                             - label: Picture Link
-                              name: image
+                              name: image_url
                               widget: string
                               required: false
                               hint: Optional - Could be the picture of the person or the company's logo. This is just the link to an image you might find online.
@@ -191,7 +191,7 @@ collections:
                         default: null
                         widget: image
                       - label: Picture Url
-                        name: image
+                        name: image_url
                         required: false
                         default: null
                         widget: string
@@ -229,7 +229,7 @@ collections:
                                     required: false
                                     hint: Optional - Could be the picture of the person or the company's logo. Here, you are actually uploading the picture.
                                   - label: Picture Link
-                                    name: image
+                                    name: image_url
                                     widget: string
                                     required: false
                                     hint: Optional - Could be the picture of the person or the company's logo. This is just the link to an image you might find online.
@@ -265,8 +265,8 @@ collections:
                               name: logo
                               widget: image
                               hint: Upload publisher's logo
-                            - label: Logo
-                              name: logo
+                            - label: LogoLink
+                              name: logo_url
                               widget: string
                               hint: Url of publisher's logo
 
@@ -322,7 +322,7 @@ collections:
                         widget: string
                         hint: Url to image of event promotion or flyer
                       - label: Event Picture
-                        name: photo_url
+                        name: photo
                         widget: image
                         hint: Uploaded image
 
